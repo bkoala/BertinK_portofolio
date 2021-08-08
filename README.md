@@ -12,3 +12,7 @@ When the user clicks on the images of the applications it take him to a coming s
 that will be updated later.
 When the user resizes the page or view the site on various screens and devices,
 he is presented with a responsive layout that adapts to his viewport.
+
+Application Page Link :https://bkoala.github.io/BertinK_portofolio/
+
+Application Screen Shot : ![Screenshot](./images/porto_screenshot.png)
