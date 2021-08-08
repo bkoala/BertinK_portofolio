@@ -112,11 +112,12 @@ main {
     grid-template-columns: auto auto;
     height: auto;
     padding: 10px;
+    margin-bottom: 30px;
     width: 100%;
   }
   .grid-item1{
     font-size: 30px;
-    width: 200px;
+    width: 250px;
     padding-left: 30px;
     height:auto;
   }
@@ -155,7 +156,7 @@ main {
     width: 50%; 
     border: 5px solid lightblue;
     position:relative;
-    height: 150px;
+    height: 200px;
   }
   .row img{
     width: 100%;
@@ -163,23 +164,25 @@ main {
   }
   /* CREATE ZOOM ON Hover over images */
  .column1  zoom {
-      padding: 50px;
+      padding: 30px;
       background-color: green;
-      transition: transform .2s; /* Animation */
-      width: 200px;
+      transition: transform .12s; /* Animation */
+      width: 150px;
       height: 200px;
-      margin: 0 auto;
+      font-size: 20px;
+      margin: 10px auto;
     }
     .column2 .column3 zoom {
-      padding: 50px;
+      padding: 20px;
       background-color: green;
-      transition: transform .2s; /* Animation */
+      transition: transform .11s; /* Animation */
       width: 100px;
-      height: 100px;
-      margin: 0 auto;
+      height: 175px;
+      margin: 10px auto;
+   
     }
     .zoom:hover {
-      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      transform: scale(1.25); /* (125% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 /* End of zoom over image */
 /*Create style for absolute positioning of  Work sections */
@@ -188,6 +191,7 @@ main {
     bottom:25px;
     left: 0px;
     font-size: 30px;
+    margin-top: 30px;
     padding:10px;
     color:#ffffff;
     background-color:lightblue;
@@ -255,7 +259,7 @@ footer h2 {
    margin: 5px;
   }
   .zoom:hover {
-    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
   .grid-item1{
     width: 100px;
@@ -288,4 +292,48 @@ bfooter nav ul li a {
   float:left;
   font-size: 15px;
 }
+}
+/*Responsive for the page*/
+@media screen and (max-width: 576px) {
+/* For mobile phones: */
+header  nav {
+  font-size: 14px; 
+  float: left;
+  margin: 2px;
+ }
+ .zoom:hover {
+   transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }
+ .grid-item1{
+   width: 100px;
+ }
+ .grid-item2{
+   width: 400px;
+ }
+ bfooter nav {
+   padding-top: 20px;
+   float:left;
+   font-size:12px;
+   width: 100%;
+}
+bfooter nav ul li a {
+ padding:5px;}
+
+#absolutework {
+ font-size: 12px;
+ bottom:5px;
+}
+.p1{
+ float:right;
+ font-size: 12px;
+ border-right: 2px solid #2a607c;
+ padding-right:5px;
+ padding-left: 5px;
+ height: 100%;
+}
+.p3{
+ float:left;
+ font-size: 12px;
+}
+   
 }
